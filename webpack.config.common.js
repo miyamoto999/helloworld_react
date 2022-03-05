@@ -4,7 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     // メインとなるJavaScriptファイル（エントリーポイント）
     entry: {
-        app:'./src/index.tsx',
+        app1:'./src/index1.tsx',
+        app2:'./src/index2.tsx',
     },
     // ファイルの出力設定
     output: {
@@ -46,9 +47,22 @@ module.exports = {
     },
 
     // htmlファイルの設定
+    // ※ htmlファイル名がイマイチだがこれでいく。
     plugins: [
-        new HtmlWebpackPlugin({
+        new HtmlWebpackPlugin({     // 静的なページ
             template: './src/index.html',
+            filename: 'index.html',
+            inject: false,      // ← これでscriptタグが追加されない
+        }),
+        new HtmlWebpackPlugin({     // 押してボタンのあるHello World的なページ
+            template: './src/index1.html',
+            filename: 'index1.html',
+            chunks: ['app1'],            // ← これでapp1.jsが追加される
+        }),
+        new HtmlWebpackPlugin({     // 別のReactを使った動的なページ
+            template: './src/index2.html',
+            filename: 'index2.html',
+            chunks: ['app2'],           // ← これでapp2.jsが追加される
         })
     ],
 

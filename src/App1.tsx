@@ -1,6 +1,6 @@
 import React from "react";
 
-export const App = ()=>{
+export const App1 = ()=>{
     const [message, setMessage] = React.useState("ボタンをおして！");
 
     const handleClick = () => {
