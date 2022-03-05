@@ -242,4 +242,4 @@ App.tsxにブレイクポイントを設定して、↓ここを押すとデバ�
 ![](images/debugstart.png)
 
 
-[github](https://github.com/miyamoto999/helloworld_ts/tree/V1)にコードを投稿しておいた。
+[github](https://github.com/miyamoto999/helloworld_react/tree/V1)にコードを投稿しておいた。

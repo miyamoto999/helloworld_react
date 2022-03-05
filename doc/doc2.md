@@ -45,4 +45,4 @@ launch.jsonのFirefox関係の設定部部に次のような設定が追加さ�
 
 ここでデバッグをリスタートすると設定したブレイクポイントで止まるようになる。
 
-[github](https://github.com/miyamoto999/helloworld_ts/tree/V2.3)にコードを投稿しておいた。
+[github](https://github.com/miyamoto999/helloworld_react/tree/V2)にコードを投稿しておいた。

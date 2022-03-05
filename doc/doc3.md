@@ -106,4 +106,4 @@ module.exports = {
 };
 ~~~
 
-[github](https://github.com/miyamoto999/helloworld_ts/tree/V3)にコードを投稿しておいた。
+[github](https://github.com/miyamoto999/helloworld_react/tree/V3.1)にコードを投稿しておいた。
